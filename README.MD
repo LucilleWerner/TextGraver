@@ -20,25 +20,44 @@ When we move to the app directory only the __pycache__ is to be ignored. A short
 The texmining pipeline can be found in the Textgraver/Textminer directory. There are only 2 more nested directory here which are __pycache__ and .idea both can be ignored. The rest of the files are either coded by us or generated or used by the pipeline.
 
 coded by us:
+
 -main.py (our suggestion for reviewing the code is to follow the pipeline via the main function.)
+
 -entrez_api.py
+
 -id_mapper_eggnog.py
+
 -mongo_retrieval.py
+
 -ncbi_ccb_api.py
+
 -orthodb_api.py
+
 -regex_genes.py
+
 -search_terms.py
+
 -sunburst.py
 
+
 Generated or used by the pipeline:
+
 -all_plants.txt
+
 -articles_doc.json
+
 -articles_doc_ncbi_api_1024.p
+
 -cooccurence_doc.json
+
 -cooccurence_doc10.json
+
 -speclist.txt
+
 -sunburst_doc.json
+
 -sunburst_doc10.json
+
 -wanted_plants.txt
 
 
