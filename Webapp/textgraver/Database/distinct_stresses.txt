@@ -1,0 +1,10 @@
+ high light
+osmotic
+oxidative
+ultraviolet
+drought
+high temperature
+salinity
+low temperature
+low light
+acidity
