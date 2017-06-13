@@ -19,7 +19,7 @@ When we move to the app directory only the pycache is to be ignored. A short des
 # Textmining pipeline
 The texmining pipeline can be found in the Textgraver/Textminer directory. There are only 2 more nested directory here which are pycache and .idea both can be ignored. The rest of the files are either coded by us or generated or used by the pipeline.
 
-__coded by us:
+__coded by us:__
 
 -main.py (our suggestion for reviewing the code is to follow the pipeline via the main function.)
 
@@ -40,7 +40,7 @@ __coded by us:
 -sunburst.py
 
 
-__Generated or used by the pipeline:
+__Generated or used by the pipeline:__
 
 -all_plants.txt
 
