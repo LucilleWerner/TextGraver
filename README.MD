@@ -13,7 +13,9 @@ The web application can be found in the Webapp directory. A few directories can 
 When we move to the app directory only the pycache is to be ignored. A short description of what the other directories contain:
 
 -static: css, fonts, images, javascript, json files 
+
 -templates: contains all the HTML of the web application
+
 -main.py: all the python that is used for the web app can be found here (besides the run.py and init.py but these are only for starting the webapp)
 
 # Textmining pipeline
