@@ -1,3 +1,4 @@
+#Funtion to find genes in abstracts with regex additional to the genes from the Uniprot CBB API
 import simplejson as json
 import re
 

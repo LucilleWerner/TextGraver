@@ -6,9 +6,11 @@ import simplejson as json
 import requests
 from time import sleep
 
+#logfile to track any connection errors that may occur during runtime while connecting to NCBI
 logfile = open('logfile_ncbi_api.txt', 'a')
 def ncbi_gene(idlist, articles_doc):
 
+    #load the articles_doc dictionary containing all the abstract info to a json format
     articles_doc = json.loads(articles_doc)
     articles_doc_update = list()
 

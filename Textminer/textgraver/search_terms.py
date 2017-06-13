@@ -1,8 +1,10 @@
-#Module for searcing correlation terms, stress terms and cultivation terms in abstracts and computing the cooccurence
+#Module for searcing correlation terms, stress terms and cultivation terms in abstracts and computing the cooccurence \
 #of all the terms for a visualisation in a cooccurence graph
 import simplejson as json
 import re
 
+#all the terms that are being searched in the abstracts, the differing terms are mapped to a generic term to \
+#make the determination of cooccurence more accurate and effective
 correlation_terms = {"increase": "increase", "enhance": "increase", "induce": "increase", "rise": "increase",
                      "increase": "accumulation",
                      "reduction": "decrease", "decrease": "decrease", "lessen": "decrease", "decline": "decrease",

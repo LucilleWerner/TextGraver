@@ -1,17 +1,18 @@
-#Module for getting a list containing the PUBMED ID's with a hit on anthocyanin and stress
+#Module for retrieving articles from Pubmed with search query: 'anthocyanin and stress'
+#Entrez module is for fetching the articles from NCBI servers, Medline module lists a record of metadata for parsing
 import simplejson as json
 from Bio import Entrez
 from Bio import Medline
 
 def pm_ids():
-    Entrez.email = "severin@student.han.nl"     # Always tell NCBI who you are
+    Entrez.email = "tellwhoyouare@ncbi.com"
     #searching pubmed with specific 'terms', entrez will retrieve pubmed id's which will be parsed.
     handle = Entrez.egquery(term="anthocyanin stress")
     record = Entrez.read(handle)
 
-    # for row in record["eGQueryResult"]:
-    #     if row["DbName"]=="pubmed":
-    #          print(row["Count"])
+    for row in record["eGQueryResult"]:
+        if row["DbName"]=="pubmed":
+             print(row["Count"])
     #searching pubmed with specific 'terms', entrez will retrieve pubmed id's which will be parsed.
     handle = Entrez.esearch(db="pubmed", term="anthocyanin stress", retmax=8000)
     #parsing of the entrez request
@@ -24,8 +25,10 @@ def pm_ids():
     #parsing the medline request
     records = Medline.parse(handle)
 
+    #convert Medline records to list
     records = list(records)
 
+    #initiate list for the articles_doc json format
     articles = list()
 
     #get the Pubmed ID, title, authors, source and date from Medline records
@@ -53,5 +56,5 @@ def pm_ids():
         })
 
     articles = json.dumps(articles)
-    #returning the list of pubmed id's and the information about the articles in a json format.
+    #returning the list of pubmed id's and the information about the articles in a json format
     return idlist, articles

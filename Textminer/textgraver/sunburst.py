@@ -4,6 +4,7 @@ import simplejson as json
 #all the distinct stress terms that were searched in the abstracts
 stress_terms = ["drought", "osmotic", "salinity", "acidity", "high temperature", "low temperature", "high light", "low light", "oxidative", "ultraviolet"]
 
+#Base function for calling the construct_sunflare function
 def construct_sunflares(articles_doc):
 
     stress_sunflare = construct_stress_sunflare(articles_doc)
@@ -33,7 +34,7 @@ def construct_stress_sunflare(articles_doc):
         all_stresses.append(stress_doc)
     sunflare['children'][0]['children'] = all_stresses
 
-    #algorithm for cunstructing sunburst from all info json doc
+    #algorithm for cunstructing sunburst from all the info from the abstracts in json doc by looping over the document
     #every layer consist of children, the last third layers consist of a name, description (mouse over to view description)
     #size (size of box in sunburst) and children (the embedded layer)
     stresses_sunflare = sunflare['children'][0]['children']
@@ -47,9 +48,11 @@ def construct_stress_sunflare(articles_doc):
                     article_species = article['species']
                     all_article_species = [x['name'] for x in article_species]
                     for s, species in enumerate(all_article_species):
+                        #lists all the species present with a certain stress term in the articles_doc
                         stress_species_list = [x['name'] for x in stress_species]
                         if species not in stress_species_list:
                             species_doc = {}
+                            #add name, description, size to the layer
                             species_doc['name'] = species
                             species_doc['description'] = ''
                             species_doc['size'] = 200
@@ -61,12 +64,14 @@ def construct_stress_sunflare(articles_doc):
 
                         if len(article_species[s]['genes']) != 0:
                             article_genes = article_species[s]['genes']
+                            #lists all the genes present in the embedded gene doc
                             all_article_genes = [x['name'] for x in article_genes]
                             species_genes = species_doc['children']
                             species_genes_list = [x['name'] for x in species_genes]
                             for g, gene in enumerate(all_article_genes):
                                 if gene not in species_genes_list:
                                     genes_doc = {}
+                                    # add name, description, size to the layer
                                     genes_doc['name'] = gene
                                     genes_doc['description'] = ''
                                     genes_doc['size'] = 200
@@ -80,10 +85,12 @@ def construct_stress_sunflare(articles_doc):
                                     article_orthologs = article_genes[g]['orthologs']
                                     orthologs = [x for x in article_orthologs]
                                     gene_orthologs = genes_doc['children']
+                                    #lists all the orthologs present in the embedded doc
                                     gene_orthologs_list = [x['name'] for x in gene_orthologs]
                                     for ortholog in orthologs:
                                         if ortholog not in gene_orthologs_list:
                                             ortholog_doc = {}
+                                            # add name, description, size to the layer
                                             ortholog_doc['name'] = ortholog
                                             ortholog_doc['size'] = 200
                                             ortholog_doc['description'] = article_orthologs.get(ortholog)
