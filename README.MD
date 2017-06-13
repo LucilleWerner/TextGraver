@@ -10,16 +10,16 @@ The web application can be found in the Webapp directory. A few directories can 
 
 -The .idea directory is part of the flask frame work and doesn't contain any coding done by us.
 
-When we move to the app directory only the __pycache__ is to be ignored. A short description of what the other directories contain:
+When we move to the app directory only the pycache is to be ignored. A short description of what the other directories contain:
 
 -static: css, fonts, images, javascript, json files 
 -templates: contains all the HTML of the web application
 -main.py: all the python that is used for the web app can be found here (besides the run.py and init.py but these are only for starting the webapp)
 
 # Textmining pipeline
-The texmining pipeline can be found in the Textgraver/Textminer directory. There are only 2 more nested directory here which are __pycache__ and .idea both can be ignored. The rest of the files are either coded by us or generated or used by the pipeline.
+The texmining pipeline can be found in the Textgraver/Textminer directory. There are only 2 more nested directory here which are pycache and .idea both can be ignored. The rest of the files are either coded by us or generated or used by the pipeline.
 
-coded by us:
+__coded by us:
 
 -main.py (our suggestion for reviewing the code is to follow the pipeline via the main function.)
 
@@ -40,7 +40,7 @@ coded by us:
 -sunburst.py
 
 
-Generated or used by the pipeline:
+__Generated or used by the pipeline:
 
 -all_plants.txt
 
