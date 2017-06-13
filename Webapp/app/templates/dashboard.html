@@ -1,0 +1,265 @@
+{% extends "layout_user.html" %}
+{% block title %}Index{% endblock %}
+{% block content %}
+<div class="row">
+        <div class="span6">
+          <div class="widget widget-nopad">
+            <div class="widget-header"> <i class="icon-list-alt"></i>
+              <h3> Project information</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <div class="widget big-stats-container">
+                <div class="widget-content">
+                  <h6 class="bigstats">Numeral facts about the project</h6>
+                  <div id="big_stats" class="cf">
+                    <div class="stat"> <i class="icon-th-list"></i> <span class="value">851<br><font size="2">Orthologs</font></span> </div>
+                    <!-- .stat -->
+
+                    <div class="stat"> <i class="icon-search"></i> <span class="value">423<br><font size="2">Genes</font></span> </div>
+                    <!-- .stat -->
+
+                    <div class="stat"> <i class="icon-envelope"></i> <span class="value">922<br><font size="2">Chemicals</font></span> </div>
+                    <!-- .stat -->
+
+                    <div class="stat"> <i class="icon-briefcase"></i> <span class="value">25%<br><font size="2">Types of Stress</font></span> </div>
+                    <!-- .stat -->
+                  </div>
+                </div>
+                <!-- /widget-content -->
+
+              </div>
+            </div>
+          </div>
+          <!-- /widget -->
+          <div class="widget">
+            <div class="widget-header"> <i class="icon-file"></i>
+              <h3>Tutorial</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <ul class="messages_layout">
+                <li class="from_user left">
+                  <div class="message_wrap"> <span class="arrow"></span>
+                    <div class="info"> <a class="name"><font color="#00ba8b">Phylogenetics</font></a> <span class="time">A short walkthrough</span>
+                    </div>
+                    <div class="text">By clicking on the <b>Phylogenetics</b> button in the navigation bar, you will be sent over to another page. You can fill in the form with an EGGnog ID, which can be found under the tab <b>Result Table</b>.</div>
+                  </div>
+                </li>
+                <li class="from_user right">
+                  <div class="message_wrap"> <span class="arrow"></span>
+                    <div class="info"> <a class="name"><font color="#00ba8b">Sunburst</font></a> <span class="time">A short walkthrough</span>
+                    </div>
+                    <div class="text">By clicking on the <b>Sunburst</b> button in the navigation bar, you will be sent over to another page. You are able to click on the circle on all the different layers. By clicking layer by layer you can select Stresses, Organisms, Orthologs and genes.</div>
+                  </div>
+                </li>
+                <li class="from_user left">
+                  <div class="message_wrap"> <span class="arrow"></span>
+                    <div class="info"> <a class="name"><font color="#00ba8b">Result Table</font></a> <span class="time">A short walkthrough</span>
+                    </div>
+                    <div class="text">By clicking on the <b>Result Table</b> button, you can insert a keyword, which generates a table with all kinds of information about the hit.</div>
+                  </div>
+                </li>
+                <li class="from_user right">
+                  <div class="message_wrap"> <span class="arrow"></span>
+                    <div class="info"> <a class="name"><font color="#00ba8b">Force Layout Graphs</font></a> <span class="time">A short walkthrough</span>
+                    </div>
+                    <div class="text">By clicking on the <b>Force Layout Graphs</b> button, you will be redirected to a page with a graph. By clicking on nodes, you will be redirected to a more informative table. Basic relations are shown in the graph.</div>
+                  </div>
+                </li>
+                <li class="from_user left">
+                  <div class="message_wrap"> <span class="arrow"></span>
+                    <div class="info"> <a class="name"><font color="#00ba8b">Programming information</font></a> <span class="time">A short walkthrough</span>
+                    </div>
+                    <div class="text">By clicking on the <b>Programming information</b> tab you can select all kinds of different tabs which contain more information about the programming side of the project.</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- /widget-content -->
+          </div>
+          <!-- /widget -->
+        </div>
+        <!-- /span6 -->
+        <div class="span6">
+
+          <!-- /widget -->
+
+
+
+          <div class="widget widget-nopad">
+            <div class="widget-header"> <i class="icon-list-alt"></i>
+              <h3> Recent News</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <ul class="news-items">
+                <li>
+
+                  <div class="news-item-date"> <span class="news-item-day">5</span> <span class="news-item-month">Aug</span> </div>
+                  <div class="news-item-detail"> <a href="graph" class="news-item-title" target="_blank">Added a Graph</a>
+                    <p class="news-item-preview">Added a working Graph, inserted with data from the self-performed analysis.</p>
+                  </div>
+
+                </li>
+                <li>
+
+                  <div class="news-item-date"> <span class="news-item-day">1</span> <span class="news-item-month">Jun</span> </div>
+                  <div class="news-item-detail"> <a href="sunburst" class="news-item-title" target="_blank">Added a Sunburst</a>
+                    <p class="news-item-preview"> Added a functional Sunburst, inserted the data from the self-performed analysis.</p>
+                  </div>
+
+                </li>
+                <li>
+
+                  <div class="news-item-date"> <span class="news-item-day">29</span> <span class="news-item-month">May</span> </div>
+                  <div class="news-item-detail"> <a href="" class="news-item-title" target="_blank">Added a functionality</a>
+                    <p class="news-item-preview"> Launched the webapp!</p>
+                  </div>
+
+                </li>
+              </ul>
+            </div>
+            <!-- /widget-content -->
+          </div>
+
+
+          <div class="widget widget-nopad">
+            <div class="widget-header"> <i class="icon-list-alt"></i>
+              <h3>GitHub</h3>
+            </div>
+            <!-- /widget-header -->
+
+              <div class="widget-content">
+                <h6 class="bigstats">Application to find Stresses in plants.</h6>
+                <div id="big_stats" class="cf">
+                  <div class="stat"> <a href="https://github.com/xirect/textgraver"><i class="icon-github"></i></a><br><span class="value"><a href="https://github.com/xirect/textgraver">GitHub</a><br><font size="2"></font><br></span> </div>
+                  <!-- .stat -->
+
+            </div>
+            <!-- /widget-content -->
+          </div>
+          <!-- /widget -->
+        </div>
+
+        <div class="widget widget-nopad">
+          <div class="widget-header"> <i class="icon-list-alt"></i>
+            <h3>Stresses</h3>
+          </div>
+          <!-- /widget-header -->
+
+            <div class="widget-content">
+              <h6 class="bigstats">Quick links for the different types of stresses.</h6>
+              <div id="big_stats" class="cf" STYLE="padding: 10px;">
+                <table class="table table-striped table-bordered">
+                <tr>
+                <th>Type of Stress</th>
+                <th>Link</th>
+                </tr>
+                <tr>
+                <td>Acidity</td>
+                <td><a href="graph_acidity"><i class="icon-search"></i></a></td>
+                </tr>
+                <tr>
+                <td>Drought</td>
+                <td><a href="graph_drought"><i class="icon-search"></i></a></td>
+                </tr>
+                <tr>
+                <td>High Light</td>
+                <td><a href="graph_highlight"><i class="icon-search"></i></a></td>
+                </tr>
+                <tr>
+                <td>High Temperature</td>
+                <td><a href="graph_highlight"><i class="icon-search"></i></a></td>
+                </tr>
+                <tr>
+                <td>Low Light</td>
+                <td><a href="graph_lowlight"><i class="icon-search"></i></a></td>
+                </tr>
+                <tr>
+                <td>Low Temperature</td>
+                <td><a href="graph_lowtemperature"><i class="icon-search"></i></a></td>
+                </tr>
+                <tr>
+                <td>Osmotic</td>
+                <td><a href="graph_osmotic"><i class="icon-search"></i></a></td>
+                </tr>
+                <tr>
+                <td>Oxidative</td>
+                <td><a href="graph_oxidative"><i class="icon-search"></i></a></td>
+                </tr>
+                <tr>
+                <td>Salinity</td>
+                <td><a href="graph_salinity"><i class="icon-search"></i></a></td>
+                </tr>
+                <tr>
+                <td>Ultra Violet</td>
+                <td><a href="graph_ultraviolet"><i class="icon-search"></i></a></td>
+                </tr>
+                <tr>
+                <td>Every type of stress</td>
+                <td><a href="graph_everything"><i class="icon-search"></i></a></td>
+                </tr>
+
+                </table>
+                <!-- .stat -->
+
+          </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+      </div>
+
+
+
+        <!-- /span6 -->
+      </div>
+      <!-- /row -->
+{% endblock %}
+{% block extrajs %}
+<script>
+
+        var lineChartData = {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [
+                {
+                    fillColor: "rgba(220,220,220,0.5)",
+                    strokeColor: "rgba(220,220,220,1)",
+                    pointColor: "rgba(220,220,220,1)",
+                    pointStrokeColor: "#fff",
+                    data: [65, 59, 90, 81, 56, 55, 40]
+                },
+                {
+                    fillColor: "rgba(151,187,205,0.5)",
+                    strokeColor: "rgba(151,187,205,1)",
+                    pointColor: "rgba(151,187,205,1)",
+                    pointStrokeColor: "#fff",
+                    data: [28, 48, 40, 19, 96, 27, 100]
+                }
+            ]
+
+        }
+
+        var myLine = new Chart(document.getElementById("area-chart").getContext("2d")).Line(lineChartData);
+
+
+        var barChartData = {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [
+                {
+                    fillColor: "rgba(220,220,220,0.5)",
+                    strokeColor: "rgba(220,220,220,1)",
+                    data: [65, 59, 90, 81, 56, 55, 40]
+                },
+                {
+                    fillColor: "rgba(151,187,205,0.5)",
+                    strokeColor: "rgba(151,187,205,1)",
+                    data: [28, 48, 40, 19, 96, 27, 100]
+                }
+            ]
+
+        }
+
+
+    </script><!-- /Calendar -->
+{% endblock %}

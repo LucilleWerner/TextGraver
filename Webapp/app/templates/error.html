@@ -1,0 +1,35 @@
+{% extends "layout_user.html" %}
+{% block title %}Error{% endblock %}
+{% block content %}
+	<div class="row">
+
+		<div class="span12">
+
+			<div class="error-container">
+				<h1>404</h1>
+
+				<h2>Error!!</h2>
+
+				<div class="error-details">
+					Oeps er is iets mis gegaan, probeer om terug te gaan naar de <a href="/">dashboard</a>!
+
+				</div> <!-- /error-details -->
+
+				<div class="error-actions">
+					<a href="/" class="btn btn-large btn-primary">
+						<i class="icon-chevron-left"></i>
+						&nbsp;
+						Back to Dashboard
+					</a>
+
+
+
+				</div> <!-- /error-actions -->
+
+			</div> <!-- /error-container -->
+
+		</div> <!-- /span12 -->
+
+	</div> <!-- /row -->
+
+{% endblock %}
